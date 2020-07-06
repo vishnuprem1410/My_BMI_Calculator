@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/WeightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Weight" />
+    <EditText
+        android:id="@+id/HeightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALCULATE"
+            android:id="@+id/calculatebtn"
+            android:onClick="calculateBTN"
+            >
+
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET DATA"
+            android:id="@+id/resetbtn"
+            android:onClick="resetBTN"
+            >
+
+        </Button>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Calculated Date:"
+        android:id="@+id/calulcateddate"
+        >
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Calculated BMI:"
+        android:id="@+id/bmiresult"
+        >
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/healthstatus"
+        >
+
+    </TextView>
+</LinearLayout>
